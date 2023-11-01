@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{%block content%}
+ <h1>Admin</h1>
+ <html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog</title>
+ 
+</head>
+<body>
+    <br>
+    <div >   
+    <a href="{{ url_for('logout') }}"> Logout</a>
+    </div>
+    <br><br>
+    <div >
+         <div class="formcontainer">
+        <h2>Edit Blog</h2>
+        <div class="form">
+            <form class="form" action="/edit_blog" method="POST">
+                <label for="blog_title"> Blog Title</label>
+                <input type="text" name="blog_title" id="blog_title" required> <br>        
+                <label for="blog_content">Blog Content</label>
+                <input type="blog_content" name="blog_content" id="blog_content" required> <br>        
+                       
+                </select> <br>            
+                <button type="submit">Save</button>           
+        
+            </form>    
+        </div>
+        
+
+    </div>       
+</div>
+</body>
+</html>
+{%endblock%}

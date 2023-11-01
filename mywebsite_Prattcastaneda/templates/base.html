@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<title>Semester Project</title>
+<meta name="generator" content="BBEdit 14.6">
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+<header>
+<h1>Hi-Tech, Low Life</h1>
+<h2>The Cyberpunk Genre's Influence on Design</h2>
+</header>
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/cyber">Cyber Design</a></li>
+<li><a href="/contact">Contact Me</a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/posts">Posts</a></li>
+</ul>
+</nav>
+<main>
+{%block content%}
+{%endblock%}
+</main>
+<footer>
+Copyright &copy; 2023 Hi-Tech, Low Life
+<a href="mailto:knprattcastaneda@amarillocollege.com">Kloee Pratt-Castaneda</a>
+</footer>
+</body>
+</html>

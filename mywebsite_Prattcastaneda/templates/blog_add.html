@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{%block content%}
+ <h1>Admin</h1>
+ <html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Account</title>
+ 
+</head>
+<body>
+    <br>
+    <div class="row">   
+    <a href="/logout"> Logout</a>
+    </div>
+    <br><br>
+    <div class="row">
+         
+        <h2>Post A New Blog</h2>
+        <h4>{{msg}}</h4>
+        <div class="formcontainer">
+            <form class="userform" action="/blog_add" method="POST">
+                <label for="blog_title"> Blog title</label>
+                <input type="text" name="blog_title" id="blog_title" required> <br>        
+                <label for="blog_content">Blog Content</label>
+                <input type="text" name="blog_content" id="blog_content"  required> <br>        
+                          
+                <button type="submit">Add</button>           
+        
+            </form>    
+        </div>          
+        
+            </form>    
+        </div>
+    </div>       
+</div>
+</body>
+</html>
+{%endblock%}

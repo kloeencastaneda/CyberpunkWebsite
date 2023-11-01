@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+    <form action="/login" method="POST">
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Welcome!</h2>
+            <h4 class="animation a2">Log in using your username and password</h4>
+          </div>
+          <div class="form">
+            <input type="Username" class="form-field animation a3" placeholder="Username" name ="username">
+            <input type="password" class="form-field animation a4" placeholder="Password" name ="password">
+            <p class="animation a5"></p>
+            <input type="submit" class="animation a6" value="LOGIN"> &nbsp;&nbsp;
+          </div>
+        </div>
+        <div class="right"></div>
+      </div>
+  </form>
+{%endblock%}
